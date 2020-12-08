@@ -1,0 +1,116 @@
+body {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    border: 1px solid darkgray;
+    border-radius: 0 0 5px 5px;
+}
+
+.screen {
+    height: 15%;
+    background-color: #000000;
+}
+
+.screenText {
+    color: white;
+}
+
+.buttons-container {
+    height: 85%;
+    border-radius: 0 0 5px 5px;
+    display: grid;
+    grid-template: "a b c d"
+                   "e f g h" 
+                   "i j k h"
+                   "l m n h"
+                   "o p q h";
+}
+
+.zero {
+    grid-row: o-end;
+    grid-column: a-start;
+}
+
+.point {
+    grid-row: p-end;
+    grid-column: b-start;
+}
+
+.remove {
+    grid-row: p-end;
+    grid-column: c-start;
+}
+
+.one {
+    grid-row: l-end;
+    grid-column: a-start;
+}
+
+.two {
+    grid-row: m-end;
+    grid-column: b-start;
+}
+
+.three {
+    grid-row: n-end;
+    grid-column: c-start;
+}
+
+.four {
+    grid-row: i-end;
+    grid-column: a-start;
+}
+
+.five {
+    grid-row: j-end;
+    grid-column: b-start;
+}
+
+.six {
+    grid-row: k-end;
+    grid-column: c-start;
+}
+
+.seven {
+    grid-row: e-end;
+    grid-column: a-start;
+}
+
+.eight {
+    grid-row: f-end;
+    grid-column: b-start;
+}
+
+.nine {
+    grid-row: g-end;
+    grid-column: c-start;
+}
+
+.plus {
+    grid-row: a-end;
+    grid-column: a-start;
+}
+
+.minus {
+    grid-row: b-end;
+    grid-column: b-start;
+}
+
+.multiplied {
+    grid-row: c-end;
+    grid-column: c-start;
+}
+
+.divided {
+    grid-row: d-end;
+    grid-column: d-start;
+}
+
+.equal {
+    grid-row: g-end / span 4;
+}
+
