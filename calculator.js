@@ -52,17 +52,19 @@ export class Calculator {
         this.writeInput = function (event) {
             // gestion des input et du calcul
             let input = event.target.textContent;
-            let content = this.querySelector('.screenText');
-            if (input === "AC") {
-                content.innerHTML = '';
-            } if (input !== "AC" && input !== "=" && input !== "x") {
-                content.innerHTML += input;
-            } if (input === "=") {
-                let result = String(eval(content.innerHTML));
-                console.log(result);
-                content.innerHTML = result;
-            } if (input === "x") {
-                content.innerHTML += "*"
+            let content = this.querySelector('.screenText'); //this == la calculete (pas tt le doc)
+            if (event.target.localName === "button") {
+                if (input === "AC") {
+                    content.innerHTML = '';
+                } if (input !== "AC" && input !== "=" && input !== "x") {
+                    content.innerHTML += input;
+                } if (input === "=") {
+                    let result = String(eval(content.innerHTML));
+                    console.log(result);
+                    content.innerHTML = result;
+                } if (input === "x") {
+                    content.innerHTML += "*"
+                }        
             }
         }
 
