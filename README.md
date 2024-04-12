@@ -1,3 +1,6 @@
+# Projet hebergé :
+https://calculator-saka.netlify.app/
+
 Objectif: Reproduire en HTML/CSS/JavaScript cette calculatrice.
 
 Contenu du fichier app.js
